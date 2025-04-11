@@ -3,28 +3,173 @@
 <head>
   <meta charset="UTF-8">
   <title>Sravya Mannem - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body { font-family: Arial, sans-serif; padding: 40px; max-width: 800px; margin: auto; }
-    h1, h2 { color: #2c3e50; }
-    a { color: #2980b9; text-decoration: none; }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #2c3e50;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 4px;
+    }
+    nav a:hover {
+      background-color: #34495e;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    header h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    header button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #ffffff;
+      color: #2a5298;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    header button:hover {
+      background-color: #f1f1f1;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+    section h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 8px 0;
+      font-size: 18px;
+    }
+    i {
+      margin-right: 10px;
+      color: #2c3e50;
+    }
+
+    #contact a i {
+      font-size: 28px;
+      margin: 10px;
+      color: #2c3e50;
+      transition: transform 0.2s, color 0.2s;
+    }
+    #contact a i:hover {
+      color: #2980b9;
+      transform: scale(1.2);
+    }
   </style>
 </head>
 <body>
-  <h1>Hello! I'm Sravya Mannem</h1>
-  <p>I'm a Java Full Stack developer passionate about building scalable, efficient systems.</p>
-  <h2>Projects</h2>
-  <ul>
-    <li>
-      <strong>Clearing and Billing</strong><br>
-      Java, Spring Boot, Angular, JDBC, MySQL<br>
-      <a href="https://github.com/Sravya-Mannem">GitHub Repo</a>
-    </li>
-  </ul>
-  <h2>Skills</h2>
-  <p>Java, Spring Boot, REST APIs, MySQL, Git</p>
-  <h2>Contact</h2>
-  <p>Email: sravyamannem1999@gmail.com<br>
-     LinkedIn: <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
-  </p>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#experience">My Experience</a>
+    <a href="#projects">My Projects</a>
+    <a href="#skills">My Skills</a>
+    <a href="#contact">Contact Me</a>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Sravya Mannem</h1>
+    <h2>Java Full Stack Developer</h2>
+    <a href="#about"><button>Know Me Better</button></a>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a passionate full stack developer skilled in building robust and scalable web applications using Java, Spring Boot, Angular, and more. I love solving real-world problems with clean code and smart design.</p>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>My Experience</h2>
+    <p><strong>Company Name</strong> - Java Full Stack Developer<br>Duration: Jan 2022 - Present</p>
+    <p>Worked on end-to-end development of enterprise-level applications using Java, Spring Boot, REST APIs, and Angular.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <ul>
+      <li>
+        <strong>Clearing and Billing System</strong><br>
+        Java, Spring Boot, Angular, JDBC, MySQL<br>
+        <a href="https://github.com/Sravya-Mannem" target="_blank">GitHub Repo</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li><i class="fab fa-java"></i> Java</li>
+      <li><i class="fas fa-leaf"></i> Spring Boot</li>
+      <li><i class="fas fa-plug"></i> REST APIs</li>
+      <li><i class="fas fa-database"></i> MySQL</li>
+      <li><i class="fab fa-git-alt"></i> Git</li>
+    </ul>
+  </section>
+
+  <!-- Contact Me Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>
+      <a href="mailto:sravyamannem1999@gmail.com" target="_blank" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/Sravya-Mannem" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://codepen.io/Sravya-Mannem" target="_blank" title="CodePen">
+        <i class="fab fa-codepen"></i>
+      </a>
+      <a href="https://www.freecodecamp.org/SravyaMannem" target="_blank" title="freeCodeCamp">
+        <i class="fab fa-free-code-camp"></i>
+      </a>
+    </p>
+  </section>
+
 </body>
 </html>
